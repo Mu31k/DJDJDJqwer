@@ -1,0 +1,19 @@
+{% extends 'polls/layot.html' %}
+
+
+{% block titl %}Форма для добавления статьи{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Форма для добавления статьи</h1>
+            <form method="post">
+                 {% csrf_token %}
+                {{ from.title }}<br>
+                {{ from.anons }}<br>
+                {{ from.full_text }}<br>
+                {{ from.date }}<br>
+                <button class="btn-success" type="submit">Добавить статью</button><br>
+                <span>{{ error }}</span>
+            </form>
+    </div>
+{% endblock %}

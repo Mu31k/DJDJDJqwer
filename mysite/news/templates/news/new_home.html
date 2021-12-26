@@ -1,0 +1,21 @@
+{% extends 'polls/layot.html' %}
+
+{% block titl %}Новости{% endblock %}
+
+{% block content %}
+<div class="small_news_warp" xmlns="http://www.w3.org/1999/html">
+        <h1>Новости дня</h1>
+<!--        <div data-post_id="" class="item_news"></div>-->
+<!--        <div data-post_id="" class="item_news"></div>-->
+<!--        <div data-post_id="" class="item_news"></div>-->
+<!--        <div data-post_id="" class="item_news"></div>-->
+<!--        <div data-post_id="" class="item_news"></div>-->
+        {% for el in news %}
+            <div class="item_news">
+                <h3> {{ el.title }} </h3>
+                <p>{{ el.anons }}</p>
+                <a href="{% url 'news-detail' el.id %}" class='btn btn-warning'>Читать статью</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,90 @@
+body {
+    background: rgb(1 0 9 / 85%);
+}
+aside {
+    float: left;
+    color: rgb(190 194 196)
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    border-right: 3px solid #4d4d4d;
+}
+
+img {
+    width: 80px;
+    float: left;
+    margin-left: 30px;
+}
+
+main .features h1{
+    color:#dc575775;}
+main .features{
+    color:#607f75;
+    text-align:center;
+    margin-top: 0px;
+    display:flow-root;
+}
+
+aside ul {list-style: none}
+aside ul li{
+    text-decoration: none;
+    display: block;
+    margin-top: 22px;
+    transition: transform .6s cubic-bezier(0, 2.33, 1, -2.11);
+    color:#00ffff85
+}
+
+
+aside ul li button {
+    text-decoration: none;
+    transform: scale(1.25);
+    background-color:#00000000;
+    color: #00ffff85;
+}
+aside ul li:hover, aside ul a:hover{
+    color:gold;
+    text-decoration: none;
+    transform: scale(1.25);
+}
+
+aside h3{
+    color:#529cdc;
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+
+..........small_news_warp{
+    color:chocolate;
+    text-align:center;
+    width:fit-content
+}
+}
+.small_news_warp{
+    color:chocolate;
+    text-align:center;
+    width:fit-content;
+    display: inherit;
+}
+h1{color:#6295c1; text-align:center}
+
+.item_news {
+    float:right;
+
+    margin-top: 20px 24%;
+    text-align: center;
+    color: #eeeeeeab;
+    .margin-left: 200px;
+    margin:25px;
+    height:150px;
+    width:400px;
+    background-color:#1b7474;
+}
+.features form{
+    text-align:center;
+    margin-top: 50px;
+    font-size: 33px;
+}
+.features .qwer {color:#b44646}
+.features h2 {color:#4f8f4b}
+span{color:red}
