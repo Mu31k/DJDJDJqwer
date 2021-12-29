@@ -11,11 +11,10 @@
 <!--        <div data-post_id="" class="item_news"></div>-->
 <!--        <div data-post_id="" class="item_news"></div>-->
         {% for el in news %}
-            <div class="item_news">
+            <a class="item_news" href="{% url 'news-detail' el.id %}">
                 <h3> {{ el.title }} </h3>
-                <p>{{ el.anons }}</p>
-                <a href="{% url 'news-detail' el.id %}" class='btn btn-warning'>Читать статью</a>
-            </div>
+                <p>{{ el.date}}</p>
+            </a>
         {% endfor %}
     </div>
 {% endblock %}

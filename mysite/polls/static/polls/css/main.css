@@ -61,7 +61,8 @@ h1{color:#6295c1; text-align:center}
 
 .item_news {
     float:right;
-
+    display: block;
+    text-decoration: none;
     margin-top: 20px 24%;
     text-align: center;
     color: #eeeeeeab;
@@ -70,6 +71,9 @@ h1{color:#6295c1; text-align:center}
     height:150px;
     width:400px;
     background-color:#1b7474;
+}
+.item_news p{
+    color:rgb(9 24 52)
 }
 .features form{
     text-align:center;
