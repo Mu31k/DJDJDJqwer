@@ -1,0 +1,13 @@
+{% extends 'polls/layot.html' %}
+
+{% block titl %}Новости{% endblock %}
+
+{% block content %}
+  <div class="features">
+        <h2>{{ article.title }}</h2>
+        <p class="qwer">{{ article.date }}</p>
+        <p>{{ article.full_text }}</p>
+
+  </div>
+
+{% endblock %}
